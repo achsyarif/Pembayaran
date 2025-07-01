@@ -13,6 +13,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     
+    font-family: 'Inter', sans-serif; 
+    background: #f9f9f9; padding: 20px; 
+    color: #333;
 }
 .rek_each_soft_white {
   
@@ -116,14 +119,25 @@ body {
   from {top: 30px; opacity: 1;}
   to {top: 0; opacity: 0;}
 }
+
+.disclaimer { 
+    font-size: 13px; 
+    color: #777; 
+    margin-top: 20px; 
+}
+a {
+  color: #333333;  /* warna abu gelap */
+  text-decoration: none;
+}
+
 </style>
 
              
    
   <body>       
     <div id="snackbar">Rekening Tersalin</div>
-    <h1>Pembayaran</h1>
-    <h4>Cukup klik "Copy" satu kali, nomer rekening sudah tersalin. Dan jangan lupa kirim bukti pembayaran.</h4>      
+    <h1 style="text-align: center;">Pembayaran</h1>
+    <p>Cukup klik <strong>Copy</strong> satu kali nomor rekening sudah tersalin. dan setelah pembayaran, mohon kirim bukti transfer ke <strong><a href = "https://wa.me/62089512224993" >WhatsApp: 0895-1222-4993</a></strong> untuk proses verifikasi.</p>     
     <div>
       <div class="rek_each_soft_white">
         <div class="rek_gambar">
@@ -169,8 +183,15 @@ body {
         </div>          
       </div>
     </div>
+
     <h1 class="qr" >QRIS ALL PAYMENT</h1>
-    <img style="max-width: 100%;" src="qr.jpeg">        
+    <img style="max-width: 100%;" src="qr.jpeg">   
+
+    <div class="disclaimer">
+      Situs ini dikelola oleh <strong>Ach Syarif</strong>, terverifikasi sebagai penjual resmi di <a href="https://maps.app.goo.gl/2Fxq3rSEaGzzruki8" target="_blank">ENSMART</a></a>.
+      Semua informasi pembayaran aman dan langsung ditinjau kami. 
+    </div> 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
     <script>
       function myFunction() {
